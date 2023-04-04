@@ -2,27 +2,19 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-	private static ArrayList<String> list;
 
-	public static void main(String[] args) {
-		read();
-		new Table(list);
+	public static void main(String[] args) throws FileNotFoundException {
+		executeFile("dogruluk_tablosu.txt");
 	}
 
-	static void read() {
-		list = new ArrayList<>();
-		File file = new File("dogruluk_tablosu.txt");
-		try {
-			Scanner reader = new Scanner(file);
-			while (reader.hasNextLine()) {
-				String line = reader.nextLine();
-				String line2 = line.replace(" ", "");
-				String line3 = line2.replace("|", "");
-				list.add(line3);
-			}
-			reader.close();
-		} catch (FileNotFoundException exception) {
-			exception.printStackTrace();
+	static void executeFile(String file) throws FileNotFoundException {
+		ArrayList<String> list = new ArrayList<>();
+		Scanner reader = new Scanner(new File(file));
+		while (reader.hasNextLine()) {
+			String line = reader.nextLine();
+			list.add(line);
 		}
+		reader.close();
+		new Table(list);
 	}
 }
