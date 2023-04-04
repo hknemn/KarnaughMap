@@ -1,0 +1,10 @@
+dogruluk_tablosu.txt dosyası okundu.
+f = Σ(1, 4, 7) = m1 + m4 + m7 = x’y’z + xy’z’ + xyz
+f = ∏(0, 2, 3, 5, 6) = M0 . M2 . M3 . M5 . M6 = (x + y + z).(x + y’ + z).(x + y’ + z’).(x’ + y + z’).(x’ + y’ + z)
+Lütfen f fonksiyonu için x değişkeninin değerini giriniz:
+0
+Lütfen f fonksiyonu için y değişkeninin değerini giriniz:
+0
+Lütfen f fonksiyonu için z değişkeninin değerini giriniz:
+1
+Girilen değerlere göre f fonksiyonunun çıkışı 1 dir.
