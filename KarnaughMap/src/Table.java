@@ -28,7 +28,7 @@ public class Table {
 	static void minterm(ArrayList<String> liste, String[][] dizi, int degiskenSayisi, int fonksiyonSayisi) {
 		for (int i = 0; i < fonksiyonSayisi; i++) {
 			int count = 0;
-			System.out.print(dizi[0][degiskenSayisi + i] + " = Î£(");
+			System.out.print(dizi[0][degiskenSayisi + i] + " = Σ(");
 			for (int j = 1; j < liste.size(); j++) {
 				if (dizi[j][degiskenSayisi + i].equals("1")) {
 					count++;
@@ -85,7 +85,7 @@ public class Table {
 				}
 			}
 			int comma = count;
-			System.out.print(dizi[0][degiskenSayisi + i] + " = âˆ�(");
+			System.out.print(dizi[0][degiskenSayisi + i] + " = ∏(");
 			for (int j = 1; j < liste.size(); j++) {
 				if (dizi[j][degiskenSayisi + i].equals("0")) {
 					System.out.print(j - 1);
