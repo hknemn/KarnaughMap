@@ -13,4 +13,15 @@ ile gösterilmektedir. Dosyada en az 2 değişkenli fonksiyonlar yer alacaktır 
 değişken sayısına sahiptir.
 4. Program dosyadan okuduğu fonksiyonları minterimlerin toplamı (3 farklı formda) ve maksterimlerin çarpımı
 (3 farklı formda) olarak ekrana yazmalıdır. Daha sonra, değişkenlerin değerlerini kullanıcıdan istemeli ve
-kullanıcının girdiği değerlere bağlı olarak fonksiyonların çıkışını ekrana yazmalıdır
+kullanıcının girdiği değerlere bağlı olarak fonksiyonların çıkışını ekrana yazmalıdır.
+
+sample txt:
+x y z | f g
+0 0 0 | 0 0
+0 0 1 | 1 0
+0 1 0 | 0 1
+0 1 1 | 0 0
+1 0 0 | 1 0
+1 0 1 | 0 0
+1 1 0 | 0 1
+1 1 1 | 1 1
