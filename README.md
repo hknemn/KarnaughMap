@@ -15,13 +15,3 @@ değişken sayısına sahiptir.
 (3 farklı formda) olarak ekrana yazmalıdır. Daha sonra, değişkenlerin değerlerini kullanıcıdan istemeli ve
 kullanıcının girdiği değerlere bağlı olarak fonksiyonların çıkışını ekrana yazmalıdır.
 
-sample txt:
-x y z | f g
-0 0 0 | 0 0
-0 0 1 | 1 0
-0 1 0 | 0 1
-0 1 1 | 0 0
-1 0 0 | 1 0
-1 0 1 | 0 0
-1 1 0 | 0 1
-1 1 1 | 1 1
