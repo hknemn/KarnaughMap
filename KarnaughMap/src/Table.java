@@ -59,6 +59,7 @@ public final class Table {
 		return truthTable;
 	}
 
+<<<<<<< HEAD
 	static char[][] createFunctionTable() {
 		functionTable = new char[functionCount][(int) Math.pow(2, variableCount) + 1];
 		for (int k = 0; k < functionCount; k++) {
@@ -80,6 +81,15 @@ public final class Table {
 			for (int j = 1; j < list.size(); j++) {
 				if (functionTable[i][j] == '1') {
 					mintermCount++;
+=======
+	static void minterm(ArrayList<String> liste, String[][] dizi, int degiskenSayisi, int fonksiyonSayisi) {
+		for (int i = 0; i < fonksiyonSayisi; i++) {
+			int count = 0;
+			System.out.print(dizi[0][degiskenSayisi + i] + " = Σ(");
+			for (int j = 1; j < liste.size(); j++) {
+				if (dizi[j][degiskenSayisi + i].equals("1")) {
+					count++;
+>>>>>>> c7eb5fc04dc90a66e8be43cd62d478aa1ff24c94
 				}
 			}
 			int mintermCountComma = mintermCount;
@@ -139,11 +149,18 @@ public final class Table {
 					makstermCount++;
 				}
 			}
+<<<<<<< HEAD
 			int makstermCountComma2 = 0;
 			makstermCountComma2 = makstermCount;
 			System.out.print(functionTable[i][0] + " = " + "∏(");
 			for (int j = 1; j < list.size(); j++) {
 				if (functionTable[i][j] == '0') {
+=======
+			int comma = count;
+			System.out.print(dizi[0][degiskenSayisi + i] + " = ∏(");
+			for (int j = 1; j < liste.size(); j++) {
+				if (dizi[j][degiskenSayisi + i].equals("0")) {
+>>>>>>> c7eb5fc04dc90a66e8be43cd62d478aa1ff24c94
 					System.out.print(j - 1);
 					makstermIndex[j - 1] = j - 1;
 					if (makstermCountComma2 != 1) {
